@@ -3,7 +3,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-2 col-2 px-0">
-				<a href="#">
+				<a href="index.php">
 					<div class="bottom-inner-menu">
 						<!-- <p>Home</p> -->
 						<i class="fa fa-home" aria-hidden="true"></i>
