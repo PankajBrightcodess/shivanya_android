@@ -12,7 +12,7 @@
 				</a>
 			</div>
 			<div class="col-md-2 col-2 px-0">
-				<a href="#">
+				<a href="tel:09297827636">
 					<div class="bottom-inner-menu">
 						<!-- <p>Call</p> -->
 						<i class="fa fa-phone" aria-hidden="true"></i>

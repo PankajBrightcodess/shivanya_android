@@ -48,7 +48,7 @@
         </div>
         <div class="row">
             <div class="col-md-2 col-2"></div>
-            <div class="col-md-2 col-2"><img src="../images/fav/R01T.png" alt="Los Angeles" class="img-fluid"></div>
+            <div class="col-md-2 col-2"><img src="../images/fav/R01T.png"  alt="Los Angeles" class="img-fluid"></div>
             <div class="col-md-2 col-2"><img src="../images/fav/T02T.png" alt="Los Angeles" class="img-fluid"></div>
             <div class="col-md-2 col-2"><img src="../images/fav/T03T.png" alt="Los Angeles" class="img-fluid"></div>
             <div class="col-md-2 col-2"><img src="../images/fav/T04T.png" alt="Los Angeles" class="img-fluid"></div>
