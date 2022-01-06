@@ -1,162 +1,106 @@
 <?php include 'header-links.php'; ?>
-<?php include 'header.php' ?>
+<?php include 'header.php'; ?>
 
 <section class="slider">
-  <div class="content">
-    <div id="demo" class="carousel slide" data-ride="carousel">
-      <ul class="carousel-indicators">
-        <li data-target="#demo" data-slide-to="0" class="active"></li>
-        <li data-target="#demo" data-slide-to="1"></li>
-        <li data-target="#demo" data-slide-to="2"></li>
-        <li data-target="#demo" data-slide-to="3"></li>
-      </ul>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../data1/images/New/01.jpg" alt="Los Angeles" style="width: 100%;">
-        </div>
-        <div class="carousel-item">
-          <img src="../data1/images/New/02.jpg" alt="Los Angeles" style="width: 100%;">
-        </div>
-        <div class="carousel-item">
-        	<img src="../data1/images/New/03.jpg" alt="Chicago" style="width: 100%;">
-        </div>
-        <div class="carousel-item">
-        	<img src="../data1/images/New/04.jpg" alt="New York" style="width: 100%;">
-        </div>
-        <!-- <div class="carousel-item">
-          <img src="<?php //echo file_url('assets/website/images/slider/3d-Rendering-Company.jpg'); ?>" alt="New York" style="width: 100%;">
-        </div> -->
-      </div>
-      <a class="carousel-control-prev" href="#demo" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-      <a class="carousel-control-next" href="#demo" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
-    </div>
-  </div>
+	<img src="../data1/images/New/03.jpg" alt="Los Angeles">
+    <hr>
 </section>
-<section class="news-scroll" >
+<section class="banner-bottom" >
+	<div class="container">
+        <div class="row">
+            <div class="col-md-6	col-6">
+            	<a href="centerlogin.php"><img src="../images/fav/01.png" alt="Los Angeles" style="padding:25px;padding-bottom: 0px;" class="img-fluid">
+            	<label>Center Login</label></a>
+            </div>
+            <div class="col-md-6	col-6">
+            	<a href="studentlogin.php"><img src="../images/fav/02.png" alt="Los Angeles" style="padding:25px;padding-bottom: 0px;" class="img-fluid">
+            	<label>Student Login</label></a>
+            </div>
+            <div class="col-md-6	col-6">
+            	<a href="centerlist.php"><img src="../images/fav/031.png" alt="Los Angeles" style="padding:25px;padding-bottom: 0px;" class="img-fluid">
+            	<label>Center List</label></a>
+
+            </div>
+            <div class="col-md-6	col-6">
+            	<a href="new_center.php"><img src="../images/fav/04.png" alt="Los Angeles" style="padding:25px;padding-bottom: 0px;" class="img-fluid">
+            	<label>Apply New Center</label></a>
+
+           </div>
+        </div>
+    </div>
+</section>
+<section class="linkup"> 
     <div class="container">
         <div class="row">
-            <div class="col-3 col-sm-3 col-md-3 col-lg-4 pr-0"><h6>New Batch:</h6></div>
-            <div class="col-5 col-sm-5 col-md-5  col-lg-4 pl-0"><marquee behavior="scroll" direction="left" scrollamount="4" onMouseOver="this.stop()" onMouseOut="this.start()">1st january 2022 , Online Classes is also Available</marquee></div>
-
-            <div class="col-4 col-sm-4 col-md-4 col-lg-4 mob-btn"><a href="pay.php" class="btn btn-success">Pay Now</a></div>
+            <div class="col-md-4 col-4"><img src="../images/fav/002s.png" alt="Los Angeles" class="img-fluid"></div>
+            <div class="col-md-4 col-4"><img src="../images/fav/003s.png" alt="Los Angeles" class="img-fluid"></div>
+            <div class="col-md-4 col-4"><img src="../images/fav/001S.png" alt="Los Angeles" class="img-fluid"></div>
         </div>
     </div>
 </section>
 
-<section class="banner-bottom" >
-	<div class="container-fluid">
+<section class="linkup"> 
+    <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <h2>
-                    <a href="center/" class="btn btn-warning blink mb-2"><strong>Centre Login</strong></a>
-                    <a href="student/" class="btn btn-warning blink mb-2"><strong>Student Login</strong></a>
-                    <a href="centerlist.php" class="btn btn-warning blink mb-2"><strong>Centre List</strong></a>
-                    <a href="newcenterenquery.php?page=courses" class="btn btn-warning blink mb-2"><strong>Apply For New Centre Franchise</strong></a>
-                    <!-- <a href="results.php" class="btn btn-warning blink"><strong>Results</strong></a> -->
-                    
-                </h2>
+            <div class="col-md-12 text-center">
+                <label style="font-size:12px; margin-top: 7px;font-weight: 600; color: #353746;">Certified By <hr style="margin:5px;"></label>
             </div>
         </div>
-
+        <div class="row">
+            <div class="col-md-2 col-2"></div>
+            <div class="col-md-2 col-2"><img src="../images/fav/R01T.png" alt="Los Angeles" class="img-fluid"></div>
+            <div class="col-md-2 col-2"><img src="../images/fav/T02T.png" alt="Los Angeles" class="img-fluid"></div>
+            <div class="col-md-2 col-2"><img src="../images/fav/T03T.png" alt="Los Angeles" class="img-fluid"></div>
+            <div class="col-md-2 col-2"><img src="../images/fav/T04T.png" alt="Los Angeles" class="img-fluid"></div>
+            <div class="col-md-2 col-2"></div>
+        </div>
     </div>
 </section>
 
-<!-- <section class="category">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="text-center pt-2 cat">
-					<p>Residential House Designs</p>
-				</div>
-			</div>
-			<div class="col-md-6 cat_img">
-				<a href="">
-					<img src="#" class="img-fluid catimg">
-					<p class="text-center subcat">SIMPLEX</p>
-				</a>
-			</div>
-			<div class="col-md-6 cat_img">
-				<a href="#">
-					<img src="#" class="img-fluid catimg">
-					<p class="text-center subcat">DUPLEX</p>
-				</a>
-			</div>
-			<div class="col-md-6 cat_img">
-				<a href="#">
-					<img src="#" class="img-fluid catimg">
-					<p class="text-center subcat">TRIPLEX</p>
-				</a>
-			</div>
-			<div class="col-md-6 cat_img">
-				<a href="#">
-					<img src="#" class="img-fluid catimg">
-					<p class="text-center subcat">APPARTMENT</p>
-				</a>
-			</div>
-			<div class="col-md-12">
-				<div class="text-center pt-2 cat">
-					<p>Interior Designs</p>
-				</div>
-			</div>
-			<div class="col-md-6 pb-2 cat_img">
-				<a href="#">
-					<img src="#" class="img-fluid catimg">
-					<p class="text-center subcat">LIVING ROOM</p>
-				</a>
-			</div>
-			<div class="col-md-6 pb-2 cat_img">
-				<a href="#">
-					<img src="#" class="img-fluid catimg">
-					<p class="text-center subcat">BED ROOM</p>
-				</a>
-			</div>
-			<div class="col-md-6 pb-2 cat_img">
-				<a href="#">
-					<img src="#" class="img-fluid catimg">
-					<p class="text-center subcat">POOJA ROOM</p>
-				</a>
-			</div>
-			<div class="col-md-6 pb-2 cat_img">
-				<a href="#">
-					<img src="#" class="img-fluid catimg">
-					<p class="text-center subcat">STUDY ROOM</p>
-				</a>
-			</div>
-			<div class="col-md-12">
-				<div class="text-center pt-2 cat">
-					<p>Commercial Designs</p>
-				</div>
-			</div>
-			<div class="col-md-6 pb-2 cat_img">
-				<a href="">
-					<img src="#" class="img-fluid catimg">
-					<p class="text-center subcat">SHOPPING MALL</p>
-				</a>
-			</div>
-			<div class="col-md-6 pb-2 cat_img">
-				<a href="">
-					<img src="#" class="img-fluid catimg">
-					<p class="text-center subcat">RESTAURANT</p>
-				</a>
-			</div>
-			<div class="col-md-6 pb-2 cat_img">
-				<a href="">
-					<img src="#" class="img-fluid catimg">
-					<p class="text-center subcat">HOSPITAL</p>
-				</a>
-			</div>
-			<div class="col-md-6 pb-2 cat_img">
-				<a href="">
-					<img src="#" class="img-fluid catimg">
-					<p class="text-center subcat">COLLEGE</p>
-				</a>
-			</div>
-		</div>
-	</div>
-</section> -->
-<?php include 'footer.php'; ?>
-<?php include 'footer-links.php' ?>
+<!--  <section class="part">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">         
+       <div class="owl-carousel owl-theme">
+            <div class="item"><h4>1</h4></div>
+            <div class="item"><h4>2</h4></div>
+            <div class="item"><h4>3</h4></div>
+            <div class="item"><h4>4</h4></div>
+            <div class="item"><h4>5</h4></div>
+            <div class="item"><h4>6</h4></div>
+            <div class="item"><h4>7</h4></div>
+            <div class="item"><h4>8</h4></div>
+            <div class="item"><h4>9</h4></div>
+            <div class="item"><h4>10</h4></div>
+            <div class="item"><h4>11</h4></div>
+            <div class="item"><h4>12</h4></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+   <script>
+   $(document).ready(function(){
+    $(".owl-carousel").owlCarousel();
+     $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    });
+
+   });
+
+ </script>
+<?php include 'footer.php';?>
+<?php include 'footer-links.php';?>

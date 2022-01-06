@@ -60,7 +60,7 @@ $msg = "";
             <div class="col-6 col-sm-6 col-md-6 col-lg-4 pr-0"><h4>New Batch Start From  :</h4></div>
             <div class="col-5 col-sm-5 col-md-5  col-lg-4 pl-0"><marquee behavior="scroll" direction="left" scrollamount="4" onMouseOver="this.stop()" onMouseOut="this.start()">1st january 2022 , Online Classes is also Available</marquee></div>
 
-            <div class="col-12 col-sm-12 col-md-12 col-lg-4 mob-btn"><a href="pay.php" class="btn btn-success">Pay Now</a></div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 mob-btn"><a href="../pay.php" class="btn btn-success">Pay Now</a></div>
         </div>
     </div>
 </section>
@@ -118,7 +118,7 @@ $msg = "";
 
         	<div class="col-md-6 col-lg-4">
             	<h1>THE SHIVANYA COMPUTER EDUCATION</h1>
-                <p>Shivanya Computer Education Private Limited to offer quality education which will ultimately lead the young minds to a successful career. We do not limit ourselves only to classroom teaching but we think beyond it. Quality education is possible only through quality teachers who come out from quality institution in order to achieve target of quality teacher education, it is great pleasure to announce that our institution would do its best for the upliftment of the society through quality education and development of skills.</span></p>
+                <p><span>Shivanya Computer Education Private Limited to offer quality education which will ultimately lead the young minds to a successful career. We do not limit ourselves only to classroom teaching but we think beyond it. Quality education is possible only through quality teachers who come out from quality institution in order to achieve target of quality teacher education, it is great pleasure to announce that our institution would do its best for the upliftment of the society through quality education and development of skills.</span></p>
                 <p class="text-center"><a href="#" class="btn btn-warning">Read More</a></p>
             </div>
             <div class="col-md-12 col-lg-4">

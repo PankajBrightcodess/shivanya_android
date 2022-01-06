@@ -1,4 +1,4 @@
-	<section class="blankfooter pb-5"></section>
+<section class="blankfooter "></section>
 <section class="bottom-menu-bar">
 	<div class="container-fluid">
 		<div class="row">
@@ -6,7 +6,8 @@
 				<a href="#">
 					<div class="bottom-inner-menu">
 						<!-- <p>Home</p> -->
-						<img src="#" class="img-fluid">
+						<i class="fa fa-home" aria-hidden="true"></i>
+						<!-- <img src="#" class="img-fluid"> -->
 					</div>
 				</a>
 			</div>
@@ -14,7 +15,7 @@
 				<a href="#">
 					<div class="bottom-inner-menu">
 						<!-- <p>Call</p> -->
-						<img src="#" class="img-fluid callimg">
+						<i class="fa fa-phone" aria-hidden="true"></i>
 					</div>
 				</a>
 			</div>
@@ -22,15 +23,14 @@
 				<a href="#">
 					<div class="bottom-inner-menu">
 						<!-- <p style="font-size: 12px;">Order</p> -->
-						<img src="#" class="img-fluid ordernowimg">
+						<i class="fa fa-credit-card" aria-hidden="true"></i>
 					</div>
 				</a>
 			</div>
 			<div class="col-md-2 col-2 px-0">
 				<a href="#">
 					<div class="bottom-inner-menu">
-						<!-- <p>Whatsapp</p> -->
-						<img src="#" class="img-fluid Whatsappimg">
+						<i class="fab fa-whatsapp" aria-hidden="true"></i>
 					</div>
 				</a>
 			</div>
@@ -38,7 +38,7 @@
 				<a href="#">
 					<div class="bottom-inner-menu">
 						<!-- <p>Construction Services</p> -->
-						<img src="#" class="img-fluid servicesimg">
+						<i class="fa fa-history" aria-hidden="true"></i>
 					</div>
 				</a>
 			</div>
