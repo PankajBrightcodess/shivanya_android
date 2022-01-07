@@ -1,6 +1,6 @@
 <?php 
 session_start();
-  include_once('../admin/connection.php');
+  include_once('connection.php');
   $msg = "";
   if (isset($_SESSION['msg'])) {
     $msg=$_SESSION['msg'];
