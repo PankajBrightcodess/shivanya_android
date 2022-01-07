@@ -30,7 +30,8 @@
 				</a>
 			</div>
 			<div class="col-md-2 col-2 px-0">
-				<a href="#">
+				<!--  <a href="https://api.whatsapp.com/send?phone=916206582247&text=&source=&data=" target="_blank" class="btn btn-danger" class="btn btn-warning"><i class="fab fa-whatsapp"></i> <br> Whatsapp</a> -->
+				<a href="https://api.whatsapp.com/send?phone=9297827636&text=&source=&data=" target="_blank">
 					<div class="bottom-inner-menu">
 						<i class="fab fa-whatsapp" aria-hidden="true"></i>
 					</div>
