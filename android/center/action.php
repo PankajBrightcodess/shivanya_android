@@ -66,7 +66,8 @@ if(isset($_POST['center_login'])){
 
 
 if(isset($_POST['resultupload'])){
-	
+		// echo '<pre>';
+		// print_r($_POST);die;
 		$enroll=$_POST['enroll'];
 		$course=$_POST['course'];
 		$name=$_POST['name'];
@@ -77,7 +78,7 @@ if(isset($_POST['resultupload'])){
 		$image= time().$photo[0];
 		$imagename = $_FILES['upload_image']['tmp_name'];
 			list($width,$height)=getimagesize($_FILES['upload_image']['tmp_name']);
-		$dir="../upload/";
+		$dir="../../upload/";
 		$allext=array("png","PNG","jpg","JPG","jpeg","JPEG","GIF","gif","pdf");
 		$check = Imageupload($dir,'upload_image',$allext,"1800000","1800000",'100000000',$image);	
 			// print_r($check);die;

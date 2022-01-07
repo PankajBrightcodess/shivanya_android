@@ -14,8 +14,8 @@
               					</div>
               				</div> -->
               				<div class="home2">
-								<a href="index.php"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Dashboard</a><hr>
-								<a href="#"><i class="fa fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Upload Result</a><hr>
+								<a href="dashboard.php"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Dashboard</a><hr>
+								<a href="uploadresult.php"><i class="fa fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Upload Result</a><hr>
 				                <a href="logout.php"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Logout</a><hr>
 							</div>
               			</div>
