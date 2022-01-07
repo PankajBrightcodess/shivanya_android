@@ -10,7 +10,7 @@
                         <div class="logo-section">
                             <h1 style="font-size: 35px; text-align:center; color: white;">Center Login</h1><hr>
                         </div>
-                        <form action="action.php" method="POST">
+                        <form action="center/action.php" method="POST">
                             <div class="form-group">
                                 <!-- <i class="fa fa-envelope-square fa-lg passkey"></i> -->
                                 <input type="text" name="email" placeholder="Enter Email Id :" class="form-control py-1" required>
