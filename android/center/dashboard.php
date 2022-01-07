@@ -20,7 +20,7 @@ $msg = "";
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 dashboard mb-3">
-				<h1 style="color:#403226; margin-top: 2rem; text-align: center;"><?php print_r($_SESSION['name'])?></h1>
+				<h4 style="color:#403226; margin-top: 2rem; text-align: center;"><?php print_r($_SESSION['name'])?></h4>
 			</div>
 		</div>
 		<div class="row">
