@@ -13,12 +13,12 @@
 			</div>
 			<div class="col-md-2 col-2 px-0">
 				
-					<!-- <div class="bottom-inner-menu"> -->
+					<div class="bottom-inner-menu">
 					
 						<a href="tel:0000000000" class="btn btn-sm">
 						<i class="fa fa-phone" aria-hidden="true"></i>
 						</a>
-					<!-- </div> -->
+					</div>
 				
 			</div>
 			<div class="col-md-4 col-4 px-0">
