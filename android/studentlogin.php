@@ -10,7 +10,7 @@
                         <div class="logo-section">
                             <h1 style="font-size: 35px; text-align:center; color: white;">Student Login</h1><hr>
                         </div>
-                        <form action="#" method="POST">
+                        <form action="student/action.php" method="POST">
                             <div class="form-group">
                                 <!-- <i class="fa fa-envelope-square fa-lg passkey"></i> -->
                                 <input type="email" name="email" placeholder="Enter User Id:" class="form-control" required="" style="padding-left: 30px;">

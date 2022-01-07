@@ -1,29 +1,29 @@
- <?php include 'header-links.php'; ?>
+<?php include 'header-links.php'; ?>
 <?php include 'header.php'; ?>
 <section class="blank-course "></section>
  <section class="pages" id="contactpg">
-  	<div class="container">
-        <form action="javascript:void(0)" method="post">
-    		<div class="row ">
+    <div class="container">
+        <form action="action.php" method="post">
+            <div class="row ">
                 <div class="col-md-12"><h5 class="text-center text-info">Payment</h5><hr class="border-warning"></div>
                 <div class="col-md-6 mb-3">
-                    <label >Category<span style="color: Red;">*</span></label>
-                	<select class="form-control" id="catg" name="category"required>
+                    <label>Category<span style="color: Red;">*</span></label>
+                    <select class="form-control" id="catg" name="category"required>
                          <option>----SELECT----</option>   
                          <option value="franchise">Franchise</option>   
                          <option value="admission">Admission</option>   
                     </select>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label >Name<span style="color: Red;">*</span></label>
+                    <label>Name<span style="color: Red;">*</span></label>
                     <input type="text" name="name" class="form-control" required> 
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label >Email <span style="color: Red;">*</span></label>
+                    <label>Email <span style="color: Red;">*</span></label>
                     <input type="email" name="email" class="form-control" required> 
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label >Phone<span style="color: Red;">*</span></label>
+                    <label>Phone<span style="color: Red;">*</span></label>
                     <input type="text" name="phone" class="form-control" required> 
                 </div>
                 <div class="col-md-6  mb-3 " id="course">
@@ -57,12 +57,12 @@
                 </select>
             </div>
              <div class="col-md-6 mb-3 institute">
-                    <label >Institute Name<span style="color: Red;">*</span></label>
+                    <label>Institute Name<span style="color: Red;">*</span></label>
                     <input type="text" name="istname" id="istnme" class="form-control"> 
                 </div>
           
             <div class="col-md-6 mb-5">
-                <label  >Amount<span style="color: Red;">*</span></label>
+                <label >Amount<span style="color: Red;">*</span></label>
                 <input type="text" name="amount" class="form-control" placeholder="0.00" required> 
             </div>
                 <div class="clearfix"></div>

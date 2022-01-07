@@ -2,7 +2,7 @@
 <section class="bottom-menu-bar">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-2 col-2 px-0">
+			<div class="col-md-3 col-3 px-3">
 				<a href="index.php">
 					<div class="bottom-inner-menu">
 						<!-- <p>Home</p> -->
@@ -11,7 +11,7 @@
 					</div>
 				</a>
 			</div>
-			<div class="col-md-2 col-2 px-0">
+			<div class="col-md-3 col-3 px-2">
 				
 					<div class="bottom-inner-menu">
 					
@@ -21,15 +21,17 @@
 					</div>
 				
 			</div>
-			<div class="col-md-4 col-4 px-0">
+			<div class="col-md-3 col-3 px-2">
 				<a href="#">
 					<div class="bottom-inner-menu">
 						<!-- <p style="font-size: 12px;">Order</p> -->
-						<i class="fa fa-credit-card" aria-hidden="true"></i>
+						<a href="pay.php">
+							<i class="fa fa-credit-card" aria-hidden="true"></i>
+					   </a>
 					</div>
 				</a>
 			</div>
-			<div class="col-md-2 col-2 px-0">
+			<div class="col-md-3 col-3 px-3">
 				<!--  <a href="https://api.whatsapp.com/send?phone=916206582247&text=&source=&data=" target="_blank" class="btn btn-danger" class="btn btn-warning"><i class="fab fa-whatsapp"></i> <br> Whatsapp</a> -->
 				<a href="https://api.whatsapp.com/send?phone=+91919852528104&text=&source=&data=" target="_blank">
 					<div class="bottom-inner-menu">
@@ -37,14 +39,13 @@
 					</div>
 				</a>
 			</div>
-			<div class="col-md-2 col-2 px-0">
+			<!-- <div class="col-md-2 col-2 px-0">
 				<a href="#">
 					<div class="bottom-inner-menu">
-						<!-- <p>Construction Services</p> -->
 						<i class="fa fa-history" aria-hidden="true"></i>
 					</div>
 				</a>
-			</div>
+			</div> -->
 		</div>
 		<div class="clearfix"></div>
 	</div>

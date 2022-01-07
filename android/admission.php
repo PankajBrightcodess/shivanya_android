@@ -3,7 +3,7 @@
 <section class="blank-course "></section>
 <section class="pages">
     <div class="container">
-        <form method="post" action="admin/action.php">
+        <form method="post" action="action.php">
        <div class="row enqueryform">
         <div class="col-lg-12 col-12 mb-3">
             <h2 class="text-center text-info">Student Admission Enquiry Form</h2>

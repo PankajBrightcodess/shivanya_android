@@ -37,37 +37,31 @@ function Imageupload($dir,$inputname,$allext,$pass_width,$pass_height,$pass_size
 	return $error;
 }
 // '''''''''''''''''''''''''''''''''''''''
-if(isset($_POST['center_login'])){
+if(isset($_POST['studentlogin'])){
 	// echo '<pre>';
 	// print_r($_POST);die;
 	$email=$_POST['email'];
 	$pass=$_POST['pass'];
-	$query="SELECT * FROM `admin` WHERE `email`='$email' and `password`='$pass' and `status`='1'";
+	$query="SELECT * FROM `student` WHERE `email`='$email' and `pass`='$pass'";
 	$run=mysqli_query($conn,$query);
 	$num=mysqli_num_rows($run);
 	if($num){
 		$data=mysqli_fetch_assoc($run);
-		$_SESSION['role'] = $data['role'];
+		$_SESSION['enroll_no'] = $data['enroll_no'];
 		$_SESSION['id'] = $data['id'];
-		$_SESSION['cent_id'] = $data['cent_id'];
-		$_SESSION['name'] = $data['name'];
-		if($_SESSION['role']==2){
-			header('location:dashboard.php');
-		}
-		else{
-			header('location:../centrelogin.php');
-		}		
+		$_SESSION['name'] = $data['std_name'];
+		$_SESSION['course'] = $data['course'];
+		header('location:dashboard.php');		
 	}
 	else{
-		 // $_SESSION['msg']='Invalid details !!!';
-		header("Location: " . $_SERVER['HTTP_REFERER']);
+		// $_SESSION['msg']='Invalid details !!!';
+		header("Location: ".$_SERVER['HTTP_REFERER']);
 	}
 }
 
 
 if(isset($_POST['resultupload'])){
-		// echo '<pre>';
-		// print_r($_POST);die;
+	
 		$enroll=$_POST['enroll'];
 		$course=$_POST['course'];
 		$name=$_POST['name'];
@@ -78,7 +72,7 @@ if(isset($_POST['resultupload'])){
 		$image= time().$photo[0];
 		$imagename = $_FILES['upload_image']['tmp_name'];
 			list($width,$height)=getimagesize($_FILES['upload_image']['tmp_name']);
-		$dir="../../upload/";
+		$dir="../upload/";
 		$allext=array("png","PNG","jpg","JPG","jpeg","JPEG","GIF","gif","pdf");
 		$check = Imageupload($dir,'upload_image',$allext,"1800000","1800000",'100000000',$image);	
 			// print_r($check);die;
@@ -88,15 +82,15 @@ if(isset($_POST['resultupload'])){
 			$sql=mysqli_query($conn,$query);
 			if($sql){
 				 header("Location:$_SERVER[HTTP_REFERER]");
-				 // $_SESSION['msg']="Successfully Added!!!";	
+				$_SESSION['msg']="Successfully Added!!!";	
 			}
 			else{
-				 // $_SESSION['msg']="Not added result !!!";
+				$_SESSION['msg']="Not added result !!!";
 				header("Location:$_SERVER[HTTP_REFERER]");
 			}
 		}
 		else{
-			 // $_SESSION['msg']=$check;
+			$_SESSION['msg']=$check;
 			header("location:$_SERVER[HTTP_REFERER]");	
 		}
 }
@@ -109,74 +103,66 @@ if(isset($_POST['del_result'])){
 	$sql=mysqli_query($conn,$query);
 	if($sql){
 		 header('Location:uploadresult.php');
-		 // $_SESSION['msg']="Center Deleted Successfully !!!";	
+		$_SESSION['msg']="Center Deleted Successfully !!!";	
 	}
 	else{
-		 // $_SESSION['msg']="Center Not Deleted!!!";
+		$_SESSION['msg']="Center Not Deleted!!!";
 		header("location:$_SERVER[HTTP_REFERER]");
 	}
    }
 
 
-    if(isset($_POST['change_center_pass'])){
-	    // print_r($_POST);die;
-	   	$email = $_POST['email'];
-		$query="SELECT * FROM `admin` WHERE `email`='$email' AND `role`='2'";
-		$run=mysqli_query($conn,$query);
-			$num=mysqli_num_rows($run);
-			if($num){
-			$data=mysqli_fetch_assoc($run);
-			$_SESSION['id'] = $data['id'];
-			$_SESSION['role'] = $data['role'];
-			$_SESSION['cent_id'] = $data['cent_id'];
-			if($_SESSION['role']==2){
-				header('location:newpassword_center.php');
-			}
-			else{
-				 // $_SESSION['msg']="Please Enter Correct Email id";
-				header("Location: " . $_SERVER['HTTP_REFERER']);
-			}
-			 }	
-			else{
-				 // $_SESSION['msg']="Please Enter Correct Email id";
-				header("Location: " . $_SERVER['HTTP_REFERER']);
-			}
+   if(isset($_POST['change_student_pass'])){
+   	// print_r($_POST);die;
+   	$email = $_POST['email'];
+	$query="SELECT * FROM `student` WHERE `email`='$email'";
+	$run=mysqli_query($conn,$query);
+		$num=mysqli_num_rows($run);
+		if($num){
+		$data=mysqli_fetch_assoc($run);
+		$_SESSION['id'] = $data['id'];
+		$_SESSION['enroll_no'] = $data['enroll_no'];
+		if(!empty($_SESSION['enroll_no'])){
+			header('location:newpassword_student.php');
+		}
+		else{
+			$_SESSION['msg']="Please Enter Correct Email id";
+			header("Location: " . $_SERVER['HTTP_REFERER']);
+		}
+		 }	
+		else{
+			$_SESSION['msg']="Please Enter Correct Email id";
+			header("Location: " . $_SERVER['HTTP_REFERER']);
+		}
    }
 
-   if(isset($_POST['update_password_center'])){
-  // print_r($_POST);die;
+   if(isset($_POST['update_password_student'])){
+   	// echo '<pre>';
+   	// print_R($_POST);die;
 		
 		   if($_POST['new_pass']==$_POST['con_pass']){
 		   	   $pass = $_POST['con_pass'];
 				$id = $_SESSION['id'];
-				$query="UPDATE `admin` SET `password`='$pass' WHERE `id`='$id'";
+				$query="UPDATE `student` SET `pass`='$pass' WHERE `id`='$id'";
 				$run=mysqli_query($conn,$query);
 				if($run){
-					$c_id = $_SESSION['cent_id'];
-					$query1="UPDATE `sh_addcenter` SET `password`='$pass' WHERE `id`='$c_id'";
-				    $run1=mysqli_query($conn,$query1);
-				   if($run1){
-				   	header('Location:index.php');
-					// $_SESSION['msg']="Password Updated Successfully !!!";	
-				   }
-				   else{
-				   	 // $_SESSION['msg']="Password Not Updated!!!";
-					header("location:$_SERVER[HTTP_REFERER]");
-				}	 
+					 header('Location:index.php');
+					$_SESSION['msg']="Password Updated Successfully !!!";	
 				}
 				else{
-					// $_SESSION['msg']="Password Not Updated!!!";
+					$_SESSION['msg']="Password Not Updated!!!";
 					header("location:$_SERVER[HTTP_REFERER]");
 				}
 			}
 			else{
-				// $_SESSION['msg']="Please Enter Correct Password";
+				$_SESSION['msg']="Please Enter Correct Password";
 				header("Location: " . $_SERVER['HTTP_REFERER']);
 			}
 	}
+	
+   
 
 
    // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''Center Area Start'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
    
 ?>

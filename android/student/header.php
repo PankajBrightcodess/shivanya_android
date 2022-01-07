@@ -14,18 +14,9 @@
               					</div>
               				</div> -->
               				<div class="home2">
-								<a href="index.php"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Home</a><hr>
-								<a href="about-us.php"><i class="fa fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;About Us</a><hr>
-				                <a href="course.php"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Courses</a><hr>
-				                <a href="facility.php"><i class="fas fa-heart"></i>&nbsp;&nbsp;&nbsp;Facilities</a><hr>
-				                <a href="faculty.php"><i class="fas fa-shopping-basket"></i>&nbsp;&nbsp;&nbsp;Faculty</a><hr> 
-				                <a href="certificate.php"><i class="fas fa-coins"></i>&nbsp;&nbsp;&nbsp;Certificarte</a><hr>
-				                <!-- <a href="javascript:void(0)"><i class="fas fa-cog"></i>&nbsp;&nbsp;&nbsp;Settings</a><hr> -->
-								<a href="contact-us.php"><i class="far fa-building"></i>&nbsp;&nbsp;&nbsp;Contact Us</a><hr>
-			          			<a href="admission.php"><i class="fas fa-id-card-alt"></i>&nbsp;&nbsp;&nbsp;Addmission Now</a><hr>
-								<a href="result.php"><i class="fas fa-info-circle"></i>&nbsp;&nbsp;&nbsp;Results</a><hr>
-								<a href="pay.php"><i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Pay Now</a><hr>
-								
+								<a href="dashboard.php"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Dashboard</a><hr>
+								<a href="studymaterial.php"><i class="fa fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Study Material</a><hr>
+				                <a href="logout.php"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Logout</a><hr>
 							</div>
               			</div>
               		</div>
@@ -49,7 +40,7 @@
 					<div class="bell">
 						<p>
 							<a href="#">
-								<span><i class="far fa-bell" style="color: #fff;"></i></span>
+								<!-- <span><i class="far fa-bell" style="color: #fff;"></i></span> -->
 							</a>
 						</p>
 					</div>
