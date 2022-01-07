@@ -13,16 +13,9 @@ $msg = "";
 		header('location:../centrelogin.php');
 	}
 ?>
-<!DOCTYPE html>
-<html>
-<head lang="en">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<?php include '../header-links.php'; ?>
-	<title>Admin Login | Shivanya Computer Education</title>
-</head>
-<body style="background:#e8e7e5;">
+<?php include 'header-links.php'; ?>
 <?php include 'header.php'; ?>
+<section class="blank-course "></section>
 <section>
 	<div class="container">
 		<div class="row">
@@ -35,5 +28,5 @@ $msg = "";
         </div>
 	</div>
 </section>
-	<?php include '../footer.php'; ?>
-	<?php include '../footer-links.php'; ?>
+<?php include 'footer.php'; ?>
+<?php include 'footer-links.php'; ?>
