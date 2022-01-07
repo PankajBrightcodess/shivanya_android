@@ -12,7 +12,7 @@ session_start();
   //     header("Location:index.php");
   // }
   
-include('admin/connection.php');
+include('connection.php');
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -71,7 +71,7 @@ include('admin/connection.php');
                     
              </thead>
              <?php 
-             include "admin/connection.php";
+             include "connection.php";
              $id = $_SESSION['last_inst_id'];
               unset($_SESSION['last_inst_id']);
              $ex=mysqli_query($conn,"select * from `addpayment` where id='$id'");
