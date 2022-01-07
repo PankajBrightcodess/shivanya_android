@@ -1,4 +1,4 @@
-<?php 
+center_login<?php 
 session_start();
 include 'connection.php';
 function Imageupload($dir,$inputname,$allext,$pass_width,$pass_height,$pass_size,$newname){
@@ -744,7 +744,7 @@ if(isset($_POST['center_login'])){
 			header('location:dashboard.php');
 		}
 		else{
-			header('location:../centrelogin.php');
+			header('location:centrelogin.php');
 		}		
 	}
 	else{
