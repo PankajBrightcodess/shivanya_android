@@ -14,8 +14,8 @@
 			<div class="col-md-2 col-2 px-0">
 				
 					<div class="bottom-inner-menu">
-						<!-- <p>Call</p> -->
-						<a href="tel:08210564577">
+					
+						<a href="tel:8210564577">
 						<i class="fa fa-phone" aria-hidden="true"></i>
 						</a>
 					</div>
