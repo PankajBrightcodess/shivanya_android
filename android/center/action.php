@@ -88,16 +88,16 @@ if(isset($_POST['resultupload'])){
 			$sql=mysqli_query($conn,$query);
 			if($sql){
 				 header("Location:$_SERVER[HTTP_REFERER]");
-				$_SESSION['msg']="Successfully Added!!!";	
+				// $_SESSION['msg']="Successfully Added!!!";	
 			}
 			else{
 				$_SESSION['msg']="Not added result !!!";
-				header("Location:$_SERVER[HTTP_REFERER]");
+				// header("Location:$_SERVER[HTTP_REFERER]");
 			}
 		}
 		else{
 			$_SESSION['msg']=$check;
-			header("location:$_SERVER[HTTP_REFERER]");	
+			// header("location:$_SERVER[HTTP_REFERER]");	
 		}
 }
 
