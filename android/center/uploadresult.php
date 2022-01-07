@@ -181,7 +181,7 @@ while ($data=mysqli_fetch_assoc($run)) {
         debugger;
         // var id=$(this).closest('tr').find('.delete').val();
          var id=$(this).attr('data-id');
-        if(confirm('Are you Sure !')){
+        if(prompt('Are you Sure !')){
         $.ajax({
                 type:'POST',
                 url:'action.php',
