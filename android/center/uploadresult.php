@@ -178,10 +178,10 @@ while ($data=mysqli_fetch_assoc($run)) {
   // });
 
     $('.delete').click(function(e){
-        debugger;
+        // debugger;
         // var id=$(this).closest('tr').find('.delete').val();
          var id=$(this).attr('data-id');
-        if(prompt('Are you Sure !')){
+        if(swal('Are you Sure !')){
         $.ajax({
                 type:'POST',
                 url:'action.php',
