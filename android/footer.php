@@ -15,7 +15,7 @@
 				
 					<div class="bottom-inner-menu">
 					
-						<a href="tel:8210564577">
+						<a href="tel:8210564577" class="btn">
 						<i class="fa fa-phone" aria-hidden="true"></i>
 						</a>
 					</div>
