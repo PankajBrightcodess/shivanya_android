@@ -137,7 +137,7 @@ function random_number($l){
                 location.reload()
             }
         },
-        callback_url:"<?php echo 'payment_success.php'?>",
+        // callback_url:"<?php echo 'payment_success.php'?>",
     };
     var razorpay_submit_btn, razorpay_instance;
 
