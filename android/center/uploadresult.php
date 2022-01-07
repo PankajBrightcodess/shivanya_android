@@ -155,3 +155,97 @@ while ($data=mysqli_fetch_assoc($run)) {
 <!-- --------------------------------------------Modal End------------------------------------------- -->
 <?php include 'footer.php'; ?>
 <?php include 'footer-links.php'; ?>
+<script type="text/javascript">
+   
+
+  //   $('.updt').click(function(e){
+  //   var id = $(this).data('id');
+  //   var cent_code = $(this).data('cent_code');
+  //   var cent_name = $(this).data('cent_name');
+  //   var address = $(this).data('address');
+  //   var mobile = $(this).data('mobile');
+  //   var mail = $(this).data('email');
+  //   var pass = $(this).data('password');
+    
+  //   $('#id').val(id);
+  //   $('#cent_code').val(cent_code);
+  //   $('#cent_name').val(cent_name);
+  //   $('#address').val(address);
+  //   $('#mobile').val(mobile);
+  //   $('#mail').val(mail);
+  //   $('#pass').val(pass);
+    
+  // });
+
+    $('.delete').click(function(e){
+        debugger;
+        // var id=$(this).closest('tr').find('.delete').val();
+         var id=$(this).attr('data-id');
+        if(confirm('Are you Sure !')){
+        $.ajax({
+                type:'POST',
+                url:'action.php',
+               data:{id:id,del_result:'del_result'},
+                success: function(result){
+                    // alert(result);
+                    console.log(result);
+                    location.reload();
+                    },
+                    error: function(){
+                    alert("error");
+                    },
+        });
+    }
+    return false;
+    });
+  $(document).ready(function(){
+    $('#datatable').DataTable();
+
+    var table=$('.data-table').DataTable({
+      scrollCollapse: true,
+      autoWidth: false,
+      responsive: true,
+      columnDefs: [{
+        targets: "no-sort",
+        orderable: false,
+      }],
+      "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+      "language": {
+        "info": "_START_-_END_ of _TOTAL_ entries",
+        searchPlaceholder: "Search"
+      },
+    });
+
+
+let editor;
+    ClassicEditor
+        .create(document.querySelector('#editor1'), {
+
+        })
+        .then(newEditor => {
+            editor = newEditor;
+            //console.log(editor.config._config.toolbar); 
+        }, editor => {
+            console.log(editor);
+        })
+        .catch(error => {
+            console.error(error);
+        });
+
+        $('.hoverable').mouseenter(function(){
+            //$('[data-toggle="popover"]').popover();
+            $(this).popover('show');                    
+        }); 
+
+        $('.hoverable').mouseleave(function(){
+            $(this).popover('hide');
+        });
+
+        function convertToSlug(Text) {
+  return Text.toLowerCase()
+             .replace(/[^\w ]+/g, '')
+             .replace(/ +/g, '-');
+}
+  });
+
+</script>

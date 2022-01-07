@@ -59,7 +59,7 @@ if(isset($_POST['center_login'])){
 		}		
 	}
 	else{
-		$_SESSION['msg']='Invalid details !!!';
+		// $_SESSION['msg']='Invalid details !!!';
 		header("Location: " . $_SERVER['HTTP_REFERER']);
 	}
 }
