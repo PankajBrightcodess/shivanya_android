@@ -181,7 +181,7 @@ while ($data=mysqli_fetch_assoc($run)) {
         // debugger;
         // var id=$(this).closest('tr').find('.delete').val();
          var id=$(this).attr('data-id');
-        if(swal('Are you Sure !')){
+        // if(confirm('Are you Sure !')){
         $.ajax({
                 type:'POST',
                 url:'action.php',
@@ -195,7 +195,7 @@ while ($data=mysqli_fetch_assoc($run)) {
                     alert("error");
                     },
         });
-    }
+    // }
     return false;
     });
   $(document).ready(function(){
