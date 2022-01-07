@@ -15,7 +15,7 @@
 				
 					<div class="bottom-inner-menu">
 					
-						<a href="tel:00000000000" class="btn">
+						<a href="tel:0000000000" class="btn btn-sm">
 						<i class="fa fa-phone" aria-hidden="true"></i>
 						</a>
 					</div>
