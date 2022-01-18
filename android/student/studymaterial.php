@@ -21,7 +21,7 @@ while ($data=mysqli_fetch_assoc($run)) {
 }
 ?>
 
-<?php include 'header-links.php'; ?>
+<?php include 'header-links.php';?>
 <?php include 'header.php'; ?>
 <section class="blank-course "></section>
 <section class="page">
@@ -55,13 +55,13 @@ while ($data=mysqli_fetch_assoc($run)) {
                            <td>
                             <?php
                             if($course['upload_image']!=''){
-                                    ?><a href="../../study_material/image/<?php echo $course['upload_image']; ?>" class="btn btn-sm btn-warning">Image Download</a>
+                                    ?><a href="https://shivanyacomputer.com/study_material/image/<?php echo $course['upload_image']; ?>" Download class="btn btn-sm btn-warning">Image Download</a>
                                     <?php } ?>
                           </td>
                            <td>
                               <?php
                               if($course['upload_pdf']!=''){
-                                    ?><a href="../../study_material/pdf/<?php echo $course['upload_pdf']; ?>" class="btn btn-sm btn-success">Pdf Download</a>
+                                    ?><a href="https://shivanyacomputer.com/study_material/pdf/<?php echo $course['upload_pdf']; ?>" Download class="btn btn-sm btn-success">Pdf Download</a>
                                     <?php } ?>
                            </td>
                             <td>
