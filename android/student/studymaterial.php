@@ -69,7 +69,7 @@ while ($data=mysqli_fetch_assoc($run)) {
                               if(!empty($course['video'])){
                                 ?>
                                   <video width="320" height="240" controls>
-                                     <source src="../../study_material/video/<?php echo $course['video']; ?>" type="video/mp4">
+                                     <source src="https://shivanyacomputer.com/study_material/video/<?php echo $course['video']; ?>" type="video/mp4">
                                    </video>
                                 <?php
                               }
